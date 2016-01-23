@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(){
+	int n, vetor[101], i, j=0;
+	
+	//usuário informa o tamanho do vetor a ser criado
+	printf("Infome o tamanho do vetor: ");
+	scanf("%d", &n);
+	
+	//usuário preenche o vetor de tamanho n
+	printf("\n\nPreencha o vetor");
+	for(i=0; i<n;i++)
+	{ 
+		printf("\nVetor[%d]: ", i);//aqui, pq aqui eu imprimi o valor do vetor
+		scanf("%d", &vetor[i]);
+	}
+		
+	while (i<=n){
+		j = i + 1;
+		while (j<=n){
+			if (vetor[i] == vetor[j]{//se vetor[i] é igual ao vetor[j], incrementa +1 na var "j" 
+				j++;                  //assim, o vetor[i] é comparado com todos os vetor[j]
+		 if (vetor[i] != vetor[j])	//verifica se vetor[i] é diferente do vetor[j], caso sim, imprime o valor do vetor
+			{
+				printf("\n\n%d   ",vetor[i]);
+				break; //usado para sair da estrutura  while(j<n) e voltar a while(i<n)
+			}
+		}
+	i++;
+ }
+}
+		
+}
